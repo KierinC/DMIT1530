@@ -1,0 +1,44 @@
+body {
+	background-color: #434a54;
+	color: white;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 300;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+section {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.flex-row:nth-child(2) p {
+	background-color: #d93041;
+	width: calc(100% / 3 - 1rem);
+}
+
+.flex-row:nth-child(3) p {
+	background-color: #f6bb42;
+	width: calc(100% / 2 - 1rem);
+}
+
+.flex-row:nth-child(4) p {
+	background-color: #2e79db;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: space-between;
+}

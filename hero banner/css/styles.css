@@ -1,0 +1,33 @@
+body {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    align-items: center;
+    background-image: url('../img/trees.jpg');
+    background-size: cover;
+    display: flex;
+    flex-flow: wrap column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+h1, p {
+    text-shadow: 3px 3px 3px #333;
+}
+
+a {
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    letter-spacing: 2px;
+}

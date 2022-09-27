@@ -1,0 +1,108 @@
+/* Universal Styles */
+
+body {
+    background-color: #edf2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #68778d;
+    text-align: center;
+}
+
+.container {
+    line-height: 1.5;
+    margin: auto;
+    max-width: 60rem;
+    padding: 2rem;
+}
+
+/* Typographic Styles */
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #63b3ed;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+/* Layout Styles */
+
+header,
+section,
+footer {
+    background-color: #fff;
+    margin-top: 2.25rem;
+}
+
+header {
+    padding: 2.25rem;
+}
+
+header p {
+    font-weight: bold;
+    color: #8594ad;
+}
+
+header p span {
+    color: #63b3ed;
+}
+
+header p a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #dd6b20;
+    padding: 0.625rem;
+    border: 0.125rem solid #dd6b20;
+}
+
+header p a:hover {
+    color: #dd6b20;
+    background-color: white;
+}
+
+main section img {
+    width: 100%;
+}
+
+main section ul {
+    font-size: 1.125rem;
+    line-height: 2;
+    padding-bottom: 2.85rem;
+}
+
+footer {
+    font-style: italic;
+    padding: 1.2rem 1.875rem;
+    text-align: left;
+}
+
+/* Media Query – Switch to Flexed Sections */
+@media screen and (min-width: 45rem) {
+    h1 {
+        font-size: 7.8rem;
+    }
+
+    header p {
+        font-size: 2rem;
+    }
+
+    header p a {
+        display: inline;
+    }
+    
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    main section {
+        width: calc(100% / 3 - 2rem);
+    }
+}
+
+/* Media Query – Maximum Width */

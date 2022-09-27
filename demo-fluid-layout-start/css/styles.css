@@ -1,0 +1,168 @@
+/* COLOUR PALETTE
+    dark    #333;
+    navy    #37384c;
+    creme   #e9dccc;
+*/
+
+body {
+    background-color: #e9dccc;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Utility Classes */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container:not(nav) {
+    padding: 3rem 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Typography Styles */
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+/* Navigation */
+
+nav {
+    padding: 0.5rem;
+}
+
+nav div.flex {
+    align-items: center;
+}
+
+nav img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #37384c;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Banner */
+
+header section {
+    background-image: url('../img/hero-banner.webp');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 2px 2px 2px #333;
+}
+
+header section div.flex {
+    align-items: center;
+    flex-flow: column wrap;
+    height: calc(100vh - 5rem);
+    justify-content: center;
+}
+
+header section h2 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+header section p {
+    font-size: 2rem;
+}
+
+/* Main Content */
+
+main img {
+    border-radius: 1rem;
+}
+
+/* Menu */
+
+main section:nth-child(2) {
+    background-color: #37384c;
+    color: #fff;
+}
+
+.menu-item {
+    width: calc(100% / 2 - 1rem);
+}
+
+.menu-item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-item ul {
+    font-size: 1.2rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Location */
+
+main section:last-child .flex {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main section:last-child img {
+    max-width: 50%;
+    padding-right: 2rem;
+
+}
+
+main section:last-child h3 {
+    padding: 2rem 0 1rem 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: #37384c;
+    color: #fff;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
