@@ -91,12 +91,129 @@ li {
 
 /* Cards */
 
+.product-info {
+    padding: 4rem 1rem 1rem 1rem;
+}
+
+.card {
+    background-color: #4A4E69;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    color: #F2E9E4;
+    font-size: 0.8rem;
+    margin: 1rem;    
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.card-bg {
+    height: 512px;
+}
+
+.card:nth-of-type(1) .card-bg {
+    background: url('../img/cards/exterior-entry.webp') center / cover no-repeat;
+}
+
+.card:nth-of-type(2) .card-bg {
+    background: url('../img/cards/interior-desk.webp') center / cover no-repeat;
+}
+
+.card:nth-of-type(3) .card-bg {
+    background: url('../img/cards/kitchen-trinkets.webp') center / cover no-repeat;
+}
+
+.description {
+    padding: 1rem;
+}
+
 
 /* Footer Styles */
 
+footer {
+    margin-top: 5rem;
+}
+
+footer section {
+    background-color: #9A8C98;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    padding: 2rem 1rem;
+}
+
+footer section a {
+    color: #22223B;
+}
+
+footer {
+    background-image: url('../img/leaf.svg');
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links:last-of-type {
+    margin-bottom: unset;
+}
+
+.copyright {
+    background-color: #22223B;
+    color: #F2E9E4;
+    text-align: center;
+}
+
+.copyright h2 {
+    font-weight: 300;
+}
 
 /* Media Queries */
 
 @media screen and (min-width: 800px) {
 
+    .wide-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero {
+        background: url('../img/bg/outdoor-wide.webp') center / cover no-repeat;
+        height: calc(100vh - 8.25rem);
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 2.2rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: unset;
+        width: calc(100% / 3 - 0.5rem);
+    }
+
+    .card-bg {
+        order: -1;
+    }
+
+    .card .description {
+        padding-top: 0;
+    }
+
+    footer .wide-flex {
+        justify-content: flex-start;
+    }
+
+    .footer-links:not(:first-of-type) {
+        margin-left: 2rem;
+    }
 }
