@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Verteran Typewriter';
+    src: url('veteran_typewriter_regular-webfont.woff2') format('woff2'),
+         url('veteran_typewriter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
