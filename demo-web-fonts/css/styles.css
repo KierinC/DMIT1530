@@ -5,3 +5,26 @@
     font-weight: normal;
     font-style: normal;
 }
+
+body {
+    background-color: #dedcda;
+    color: #3b373f;
+    font-family: 'Verteran Typewriter', Courier, monospace;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #623f53;
+    font-family: 'Beth Ellen', cursive;
+    font-size: 2.5em;
+}
+
+div.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: auto;
+    width: 60ch;
+}
