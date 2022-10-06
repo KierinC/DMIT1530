@@ -7,7 +7,10 @@ Blue   #0088e0
 */
 
 body {
+  background: url('../img/pole-closeup-mobile.webp') center / cover no-repeat;
+  color: #fff;
   font-family: 'Oswald', sans-serif;
+  text-align: center;
 }
 
 h2 {
@@ -20,4 +23,131 @@ p {
   font-family: 'Arvo', serif;
 }
 
-/* Mobile Layout */
+/* Navigation Styles */
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li a {
+  color: #222;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  letter-spacing: 0.4rem;
+  transition: 0.4s ease;
+}
+
+header svg {
+  width: 5rem;
+}
+
+header svg path {
+  fill: #222;
+}
+
+@media screen and (max-width: 925px) {
+  nav {
+    background-color: #fbf3ef;
+  }
+
+  li {
+    padding: 0.5rem 0;
+  }
+
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(5) {
+    background-color: #e24c3b;
+  }
+
+  nav ul li:nth-child(2) {
+    background-color: #0088e0;
+  }
+
+  .logo {
+    order: -1;
+  }
+}
+
+/* Main Layout */
+
+main h2 {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  padding: 3rem 0;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #222;
+}
+
+main section img {
+  margin: 1rem auto;
+  max-width: 4.5rem;
+}
+
+.col {
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 2rem;
+}
+.col p a {
+  background-color: #e24c3b;
+  border-radius: 0.3rem;
+  color: #fbf3ef;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease;
+}
+
+.col p a:hover {
+  background-color: #0088e0;
+}
+
+@media screen and (min-width: 925px) {
+  body {
+    background: url('../img/pole-closeup.webp') center / cover no-repeat;
+  }
+
+  nav {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  nav ul {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  nav ul li {
+    flex: 1 1 25%;
+  }
+
+  .logo {
+    flex: 1 0 50%;
+  }
+
+  nav ul li a {
+    color: #fbf3ef;
+  }
+
+  nav ul li a:hover {
+    letter-spacing: 0.2rem;
+  }
+  
+  header svg path {
+    fill: #fbf3ef;
+  }
+}
