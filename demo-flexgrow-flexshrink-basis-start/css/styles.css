@@ -1,0 +1,23 @@
+/* Colour Palette
+
+Red    #e24c3b
+White  #fbf3ef
+Blue   #0088e0
+
+*/
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Arvo', serif;
+}
+
+/* Mobile Layout */
