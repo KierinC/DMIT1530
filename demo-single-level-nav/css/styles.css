@@ -1,1 +1,66 @@
-/* developer styles go here */
+body {
+    background-color: #37575f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #263238;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    color: #01909d;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul svg {
+    height: 1.25rem;
+}
+
+svg path,
+svg rect,
+svg polygon {
+    fill: #01909d;
+}
+
+ul li a:hover,
+ul li a:hover svg path,
+ul li a:hover svg rect,
+ul li a:hover svg polygon,
+ul li a:focus,
+ul li a:focus svg path,
+ul li a:focus svg rect,
+ul li a:focus svg polygon {
+    color: #00bcd4;
+    fill: #00bcd4;
+}
+
+ul li a:active,
+ul li a:active svg path,
+ul li a:active svg rect,
+ul li a:active svg polygon {
+    color: #e0f7fa;
+    fill: #e0f7fa;
+}
+
+@media screen and (min-width: 985px) {
+    ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    li:focus-within {
+        outline: #e0f7fa;
+        transform: scale(1.1);
+        transition: 0.5s ease;
+    }
+}
