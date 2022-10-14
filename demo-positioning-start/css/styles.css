@@ -17,11 +17,141 @@ body {
 
 /* HEADER */
 
+header {
+    background-color: #3db39e;
+    color: #fff;
+    font-family: 'Signika', sans-serif;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 
+header svg {
+    margin-right: 1rem;
+    width: 3rem;
+}
+
+header svg path {
+    fill: #fff;
+}
 
 /* MAIN LAYOUT */
 
+main {
+    pad: 2rem;
+}
 
+main section > h2 {
+    font-family: 'Signika', sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 3rem auto;
+    max-width: 20rem;
+    text-align: right;
+}
+
+main section > h2 span {
+    display: block;
+    text-align: left;
+}
+
+main .flex > div {
+    background-color: #f4f0e8;
+    border-radius: 0.4rem;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+h3 {
+    line-height: 2;
+    margin-top: 1rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+.price {
+    font-weight: 600;
+    color: #dc6419;
+}
+
+.price span {
+    color: #666;
+    text-decoration: line-through;
+}
+
+a {
+    background-color: #3db39e;
+    border-radius: 0.4rem;
+    color: #fff;
+    display: block;
+    margin: auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+a:hover,
+a:focus {
+    background-color: #dc6419;
+    text-decoration: underline;
+}
+
+.sale,
+.new {
+    position: absolute;
+    width: 4rem;
+}
+
+.new {
+    top: 2rem;
+    left: 2rem;
+}
+
+.sale {
+    top: 2rem;
+    right: 2rem;
+}
+
+.chat {
+    background-color: #fff;
+    border: 2px dotted #3db39e;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+.chat img {
+    width: 3rem;
+}
+
+.chat p {
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 /* MEDIA QUERIES */
 
+@media screen and (min-width: 1080px) {
+    .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main .flex > div {
+        margin: unset;
+        width: calc(100% / 3 - 1rem);
+    }
+}
