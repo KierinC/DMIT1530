@@ -1,0 +1,19 @@
+/* Colour Palette
+    off-black : #002438;
+    navy      : #003049;
+    orange    : #F77F00;
+    yellow    : #FCBF49;
+*/
+
+body {
+    font-family: sans-serif;
+}
+
+/* Helper Classes */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media Query */
