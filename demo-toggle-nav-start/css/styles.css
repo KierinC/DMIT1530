@@ -1,11 +1,14 @@
 /* Colour Palette
-    off-black : #002438;
-    navy      : #003049;
-    orange    : #F77F00;
-    yellow    : #FCBF49;
+    dark purple     : #3c2e4c;
+    orange          : #e85417;
+    reddish orange  : #ff7518;
+    black           : #333;
+    off-white       : #d6cbbb;
 */
 
 body {
+    background-color: #333;
+    color: #d6cbbb;
     font-family: sans-serif;
 }
 
@@ -16,4 +19,112 @@ body {
     justify-content: space-between;
 }
 
+.inner-container {
+    margin: auto;
+    max-width: 64rem;
+}
+
+/* Header & Nav */
+
+header {
+    background-color: #ff7518;
+}
+
+header .flex-container {
+    padding: 1rem;
+}
+
+header a {
+    color: #111;
+    display: block;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+.menu li {
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.menu li:hover {
+    background-color: #3c2e4c;
+}
+
+/* Toggle button */
+
+.toggle-btn {
+    background-color: #ff7518;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    font-size: 0.8rem;
+}
+
+.toggle-btn:hover svg rect,
+.toggle-btn:hover span {
+    color: #fff;
+    fill: #fff;
+}
+
+/* Menu Functionality */
+
+header nav {
+    background-color: #ff7518;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: max-height 0.5s ease;
+    /* visibility: hidden; */
+    width: 100%;
+}
+
+.open-sesame {
+    max-height: 100vh;
+    /* visibility: visible; */
+}
+
+/* Main Layout */
+
+main section {
+    padding: 3rem;
+    text-align: center;
+}
+
+main section h2 {
+    font-size: 3rem;
+}
+
 /* Media Query */
+
+@media screen and (min-width: 40rem) {
+    .toggle-btn {
+        display: none;
+    }
+
+    header nav {
+        position: static;
+        max-height: unset;
+        width: auto;
+    }
+
+    .menu,
+    header .inner-container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu li {
+        margin-right: 1rem;
+    }
+
+    .menu li:hover {
+        background-color: unset;
+    }
+}

@@ -7,23 +7,46 @@
     <title>Toggle Navigation</title>
 
     <!-- Meta Tags -->
-    <meta name="author" content="...">
-    <meta name="description" content="...">
+    <meta name="author" content="Kierin Wanless | KierinC on GitHub">
+    <meta name="description" content="This website demostrates how to use JavaScript to create a simple hamburger menu.">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-                
-    <!-- This is a 'hamburger menu'. This icon indicates that
-         a menu will expand or appear when the user clicks it. -->
+    <header>
+        <div class="inner-container">
+            <div class="flex-container">
+                <h1><a href="#">Slime Burger</a></h1>
 
-    <svg viewBox="0 0 100 80">
-        <rect rx="8"></rect>
-        <rect y="30" rx="8"></rect>
-        <rect y="60" rx="8"></rect>
-    </svg>
-
+                <button class="toggle-btn">
+                    <svg viewBox="0 0 100 80">
+                        <rect height="20" width="100" rx="8"></rect>
+                        <rect height="20" width="100" y="30" rx="8"></rect>
+                        <rect height="20" width="100" y="60" rx="8"></rect>
+                    </svg>
+                    <span>menu</span>
+                </button>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Spooky Menu</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Complaints</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="inner-container">
+            <h2>Slime Burger</h2>
+            <p>Good thing we're here for a limited time only.</p>
+        </section>
+    </main>
 </body>
 </html>
