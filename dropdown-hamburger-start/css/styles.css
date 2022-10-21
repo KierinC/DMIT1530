@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'Milky Honey';
+    src: url('milky_honey-webfont.woff2') format('woff2'),
+         url('milky_honey-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
     --navy: #0c263e;
     --dk-navy: #071629;
     --orange: #e75a2f;
     --dk-orange: #bc4123;
+    --honey-font: 'Milky Honey', cursive;
+    --roboto: 'Roboto', sans-serif;
 }
 
 /* Utility Classes */
@@ -15,6 +26,12 @@ body {
     color: var(--dk-navy);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+
+h1 a,
+h2 {
+    font-family: var(--honey-font);
+    font-weight: normal;
 }
 
 .btn {
