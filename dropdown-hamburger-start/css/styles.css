@@ -1,0 +1,36 @@
+:root {
+    --navy: #0c263e;
+    --dk-navy: #071629;
+    --orange: #e75a2f;
+    --dk-orange: #bc4123;
+}
+
+/* Utility Classes */
+
+
+/* Typography */
+
+body {
+    background-color: #fff;
+    color: var(--dk-navy);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.btn {
+    background: linear-gradient(270deg, rgba(231,90,47,1) 0%, rgba(188,65,35,1) 100%);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Header & Navigation */
+
+svg,
+header img {
+    max-width: 2rem;
+}
+
+/* Main Styles */
+
+/* Footer */
+
+/* Media Query */
