@@ -4,7 +4,6 @@
          url('milky_honey-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 :root {
@@ -124,8 +123,8 @@ svg path {
 
 .first-link {
     align-items: center;
-    font-size: 1.2rem;
     display: flex;
+    font-size: 1.2rem;
 }
 
 .first-link img {
