@@ -1,0 +1,41 @@
+/* 
+    Variables 
+
+    We can store all sorts of values in CSS custom properties, including things that are a little long, things that aren't easy to remember, or things that we might want to change throughout our entire website later.
+
+    Remember to declare your variables in the :root of the document, else other elements may not be able to acces them (i.e. use the correct scope)!
+*/
+
+/* Typography */
+
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+/* Navigation */
+
+
+/* Main Content */
+
+
+/* Footer */
+
+
+/* Media Query */
+@media screen and (min-width: 720px) {
+    .wide-flex {
+        align-items: center;
+        display: flex;
+    }
+}
