@@ -1,0 +1,218 @@
+/* 
+    Variables 
+
+    We can store all sorts of values in CSS custom properties, including things that are a little long, things that aren't easy to remember, or things that we might want to change throughout our entire website later.
+
+    Remember to declare your variables in the :root of the document, else other elements may not be able to acces them (i.e. use the correct scope)!
+*/
+:root {
+    --nunito: 2em/1.5 'Nunito', 'Helvetica Neue', 'sans-serif';
+    --open-sans: 1rem/1.2 'Open Sans'. 'sans-serif';
+    --box-shadow: 0 0 10px 0 rgba(33 33 33 / 15%);
+    --black: #212121;
+    --red: #c0232a;
+}
+/* Typography */
+
+body {
+    color: var(--black);
+    font: var(--open-sans);
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font: var(--nunito);
+    text-transform: uppercase;
+}
+
+h1 a {
+    color: var(--red);
+    font-size: 1.25rem;
+    white-space: nowrap;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover:not(.btn) {
+    color: var(--red);
+}
+
+/* Utility Classes */
+
+.btn {
+    background-color: var(--black);
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: var(--red);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+/* Navigation */
+
+header {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .inner-container {
+    position: relative;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+header svg {
+    width: 1.5rem;
+}
+
+header svg path {
+    fill: var(--black);
+}
+
+header svg:hover path {
+    fill: var(--red);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu {
+    background-color: #fff;
+    left: 0;
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 3rem;
+    width: 100%;
+}
+
+.open .menu {
+    max-height: unset;
+    overflow: visible;
+}
+
+/* Main Content */
+
+.info {
+    margin: auto;
+    max-width: 80ch;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.info p {
+    font-size: 1.2em;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin: 1rem 0.5rem;
+}
+
+.card picture,
+.card source {
+    max-width: 100%;
+}
+
+.card source,
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--black);
+    color: #fff;
+    font-size: 0.8em;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+footer * {
+    margin-bottom: 1rem;
+}
+
+/* Media Query */
+@media screen and (min-width: 720px) {
+    .wide-flex {
+        align-items: center;
+        display: flex;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .menu {
+        overflow: visible;
+        padding-bottom: 0;
+        position: static;
+        width: unset;
+    }
+
+    header ul {
+        margin: 0;
+    }
+
+    header ul li {
+        margin-right: 2rem;
+    }
+
+    .card {
+        max-height: 12rem;
+    }
+
+    .card .card-body {
+        flex: 2;
+    }
+
+    .card source,
+    .card img {
+        border-radius: 5px 0 0 5px;
+        max-height: 12rem;
+    }
+
+    footer {
+        position: sticky;
+    }
+}
