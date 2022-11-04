@@ -172,6 +172,23 @@ a span {
     visibility: visible;
 }
 
+/* Menu Fincitonality */
+
+header nav {
+    background-color: var(--dk-navy);
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.show-nav {
+    max-height: unset;
+    overflow: visible;
+    transition: max-height 1s ease;
+}
+
 /* Main Styles */
 
 .intro {
@@ -184,9 +201,44 @@ a span {
     max-width: 15rem;
 }
 
+/* Statistics */
+
+.banner {
+    background: url('../img/dugge.webp') right / cover;
+}
+
+.scrim {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+aside .flex-container {
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: calc(100% / 2 - 0.5rem);
+}
+
+aside h3 {
+    width: 100%;
+}
+
+aside h4 {
+    border-bottom: 2px solid var(--orange);
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+
+aside p {
+    margin: 0;
+}
+
 /* Photo Gallery */
 
 .photo-container {
+    height: calc(15rem + 35vw);
+    max-height: 30rem;
     position: relative;
 }
 
@@ -194,6 +246,118 @@ a span {
     position: absolute;
 }
 
+.photo-container img:first-of-type {
+    top: 5.75rem;
+}
+
+.photo-container img:last-of-type {
+    left: 2rem;
+    height: 85%;
+    top: 7.5%;
+}
+
 /* Footer */
 
+footer {
+    background-color: var(--dk-navy);
+    color: #fff;
+    font-size: 0.8em;
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer h3 {
+    padding-bottom: 1rem;
+}
+
+footer p:last-of-type {
+    margin: 0;
+}
+
+footer div div {
+    padding: 1rem 0;
+    text-align: left;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
 /* Media Query */
+
+@media screen and (min-width: 58rem) {
+    .wide-flex {
+        align-items: flex-start;
+        display: flex;
+    }
+    
+    .toggle-btn {
+        display: none;
+    }
+
+    header div.inner-container {
+        max-width: 60rem;
+    }
+
+    .first-link img,
+    a span {
+        display: unset;
+    }
+
+    header nav {
+        justify-content: flex-end;
+        overflow: visible;
+        position: static;
+        white-space: nowrap;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .main-menu li {
+        position: relative;
+    }
+
+    .main-menu > li {
+        margin: 1rem;
+    }
+
+    .second-tier,
+    .third-tier {
+        background-color: var(--dk-navy);
+        min-width: 100%;
+        padding: 1rem;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .main-menu li:hover > .second-tier,
+    .second-tier li:hover .third-tier {
+        visibility: visible;
+    }
+
+    .second-tier {
+        left: 0;
+        text-align: right;
+    }
+
+    .third-tier {
+        left: 100%;
+        text-align: left;
+        top: -1rem;
+    }
+
+    .members {
+        border-top: none;
+        margin: 0;
+        padding-top: 0;
+    }
+}
