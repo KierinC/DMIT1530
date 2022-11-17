@@ -1,0 +1,51 @@
+:root {
+	--blue: #6593A6;
+	--grey: #58595B;
+	--yellow: #F2CF63;
+	--orange: #F2C063;
+	--white: #F2F2F2;
+}
+
+/* Utility Classes */
+
+.container {
+	margin: auto;
+	max-width: 1024px;
+}
+
+.sr-only {
+	
+}
+
+/* Typography */
+
+body {
+	background-color: var(--grey);
+	font-family: 'Karla', sans-serif;
+}
+
+/* Header */
+
+
+
+/* Search Form */
+
+
+
+/* Login Form */
+
+
+
+/* Sign-Up Area */
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 720px) {
+	
+}
+
+
+
+
