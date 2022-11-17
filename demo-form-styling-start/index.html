@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo - Styling Forms</title>
 
-    <meta name="description" content="Header with accessibile Search Bar">
+    <meta name="description" content="Header with accessibile Search Bar" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="upper-header">
-                
-            </div> <!-- end of .upper-header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap"
+      rel="stylesheet"
+    />
 
-        </div> <!-- end of .contianer -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="upper-header">
+          <h1 class="sr-only">Search Co.</h1>
+          <img src="img/logo.png" alt="Search Co. Logo" />
+          <!-- Menu Icon -->
+          <div class="menu-toggle">
+            <svg
+              enable-background="new 0 0 455 455"
+              version="1.1"
+              viewBox="0 0 455 455"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m227.5 0c-125.64 0-227.5 101.86-227.5 227.5s101.86 227.5 227.5 227.5 227.5-101.86 227.5-227.5-101.86-227.5-227.5-227.5zm-110 262.5c-19.299 0-35-15.701-35-35s15.701-35 35-35 35 15.701 35 35-15.701 35-35 35zm110 0c-19.299 0-35-15.701-35-35s15.701-35 35-35 35 15.701 35 35-15.701 35-35 35zm110 0c-19.299 0-35-15.701-35-35s15.701-35 35-35 35 15.701 35 35-15.701 35-35 35z"
+              />
+            </svg>
+            <p>menu</p>
+          </div>
+        </div>
+        <!-- end of .upper-header -->
+        <form action="" method="get" role="search">
+          <label for="search-bar" class="sr-only">Search</label>
+          <input id="serach-bar" type="text" placeholder="Search" />
+          <input type="submit" value="&emsp;" />
+        </form>
+      </div>
+      <!-- end of .contianer -->
     </header>
 
     <main>
-        <div class="container">
-            <div class="login">
+      <div class="container">
+        <div class="login">
+          <h2>Log In</h2>
 
-            </div> <!-- end of .login -->
+          <form action="#" method="post">
+            <div>
+              <label for="email">Email Address</label>
+              <input id="email" type="email" required />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div>
+              <input type="submit" value="Sign In" />
+            </div>
+          </form>
+        </div>
+        <!-- end of .login -->
 
-            <div class="sign-up">
-               
-            </div> <!-- end of .sign-up -->
-        </div> <!-- end of .container -->
+        <div class="sign-up">
+          <h2>Sign Up</h2>
+          <p>All of your questions answered in one place.</p>
+          <p>
+            Sign up now to discover why Search Co. has been the number one
+            internet search engine in over 160+ countries since 1998.
+          </p>
+          <a href="#">Sign Up Now</a>
+        </div>
+        <!-- end of .sign-up -->
+      </div>
+      <!-- end of .container -->
     </main>
-</body>
+  </body>
 </html>

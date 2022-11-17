@@ -1,51 +1,189 @@
 :root {
-	--blue: #6593A6;
-	--grey: #58595B;
-	--yellow: #F2CF63;
-	--orange: #F2C063;
-	--white: #F2F2F2;
+  --blue: #6593a6;
+  --grey: #58595b;
+  --yellow: #f2cf63;
+  --orange: #f2c063;
+  --white: #f2f2f2;
 }
 
 /* Utility Classes */
 
 .container {
-	margin: auto;
-	max-width: 1024px;
+  margin: auto;
+  max-width: 1024px;
 }
 
 .sr-only {
-	
+  position: absolute;
+  left: -99999999px;
+  top: -99999999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 /* Typography */
 
 body {
-	background-color: var(--grey);
-	font-family: 'Karla', sans-serif;
+  background-color: var(--grey);
+  font-family: "Karla", sans-serif;
+}
+
+h2 {
+  margin-bottom: 2rem;
 }
 
 /* Header */
 
+header {
+  background-color: var(--blue);
+  padding: 1rem;
+}
 
+header img {
+  height: 4rem;
+}
+
+.upper-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+.menu-toggle svg path,
+.menu-toggle p {
+  color: var(--white);
+  fill: var(--white);
+}
+
+.menu-toggle svg path:hover,
+.menu-toggle p:hover {
+  color: var(--orange);
+  fill: var(--orange);
+  transition: 0.3s ease-in-out;
+}
 
 /* Search Form */
 
+header form {
+  margin: 1.5rem 0 0 0;
+  display: flex;
+}
 
+header form input[type="text"] {
+  border: none;
+  border-radius: 0.4rem 0 0 0.4rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+header form input[type="submit"] {
+  background: url("../img/magnifying-glass.svg") center / 1.8rem no-repeat
+    var(--orange);
+  border: none;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+  width: 40px;
+}
 
 /* Login Form */
 
+main {
+  padding: 2rem 1rem;
+}
 
+main .container {
+  background-color: var(--white);
+  border-radius: 0.4rem;
+  padding: 2rem 1rem;
+}
+
+main form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+main form div {
+  margin-bottom: 1rem;
+}
+
+.login {
+  border-bottom: 2px dashed var(--grey);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.login form input {
+  background-color: #fff;
+  border: 1px solid var(--blue);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.login form input[type="submit"] {
+  background-color: var(--orange);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  text-transform: lowercase;
+}
+
+/* Validation */
+
+.login form input:valid:not([type="submit"]) {
+  background: url("../img/check.svg") 95% / 1rem no-repeat white;
+}
+
+.login form input:invalid:not([type="submit"]) {
+  background: url("../img/exclamation.svg") 95% / 1rem no-repeat white;
+}
 
 /* Sign-Up Area */
 
+.sign-up p {
+  margin-bottom: 1rem;
+}
 
+.sign-up a {
+  background-color: var(--blue);
+  border-radius: 0.4rem;
+  color: #fff;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.sign-up a:hover {
+  background-color: var(--orange);
+  color: #000;
+  transition: 0.1s ease-in-out;
+}
 
 /* Media Queries */
 
 @media screen and (min-width: 720px) {
-	
+  main .container {
+    display: flex;
+    padding: 2rem 0;
+  }
+
+  main .login {
+    border: none;
+    border-right: 2px dashed var(--grey);
+    min-width: calc(100% / 2);
+    padding: 2rem;
+  }
+
+  main .sign-up {
+    max-width: 60ch;
+    padding: 2rem;
+  }
 }
-
-
-
-
