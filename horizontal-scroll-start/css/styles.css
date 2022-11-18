@@ -1,8 +1,108 @@
-:root {
-    --text: rgb(34, 34, 34);
-    --bg: rgb(235, 235, 235);
+body {
+  color: #222;
 }
 
-body {
-    color: var(--text);
+.inner-container {
+  max-width: 64rem;
+  padding: 2rem 1rem;
+}
+
+/* Typographic */
+
+h1,
+h2,
+h3,
+.btn {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+
+p {
+  font-family: "Roboto Flex", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  background-color: #333;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+  width: 8.5rem;
+}
+
+.btn:hover {
+  background-color: #000;
+  letter-spacing: 2px;
+}
+
+/* Notes Section */
+
+section:last-of-type {
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+section:last-of-type p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Horizontal Scroll Widget */
+
+.scroll-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.2rem;
+  box-shadow: 3px 3px 3px #eee;
+  flex: 0 0 24rem;
+  margin: 2rem 1rem;
+}
+
+.card img {
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* For webkit browsers only */
+.scroll-wrapper::-webkit-scrollbar {
+  background-color: #eee;
+  width: 0.5rem;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background-color: #444;
+}
+
+/* Firfox only */
+.scroll-wrapper {
+  scrollbar-color: #444 #eee;
+  scrollbar-width: thin;
 }

@@ -1,22 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change this, dingus!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Scrolling (Card Carousel)</title>
 
     <!-- Additional Information -->
-    <meta name="author" content="">
-    <meta name="description" content="This is a simple index template; therefore, the content of this meta tag will need to be updated when this template is used.">
+    <meta name="author" content="Kierin | KierinC on GtHub" />
+    <meta
+      name="description"
+      content="This website demonstrates how to create an element that overfloes off screen and that the user can scroll through."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- <script src="js/main.js" defer></script> -->
+  </head>
+  <body>
+    <section>
+      <div class="inner-container">
+        <h2>Shop Semi-Permanent Dyes</h2>
+        <p>
+          Our Vegan Semi-Permanent Colour is a great way to try out new shades
+          and be a little bit more adventurous with the way you look. Whether
+          that's dyeing your hair a new shade or giving it some shine, this
+          product will be able to help you achieve a head-turning style in no
+          time at all.
+        </p>
+      </div>
+      <!-- end of .inner-container-->
 
-</head>
-<body>
-    <h1>Hello, world!</h1>
-</body>
+      <div class="scroll-wrapper">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="img/1.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>'ello Yellow</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="img/2.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>Mauve On Over</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="img/3.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>Rosy Ros&eacute;</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <img src="img/4.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>That's So Raven</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <img src="img/5.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>Orange You Glad</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <img src="img/6.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>Green Dreams</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+          <img src="img/7.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>Forest Grump</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+          <img src="img/8.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>Electric Bluegaloo</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+          <img src="img/9.webp" alt="hair dye colour" />
+          <div class="card-body">
+            <h3>L'Amour Est Bleu</h3>
+            <p class="price">$18.99 CAD</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+        <!-- end of .cards -->
+      </div>
+    </section>
+    <section>
+      <h1>Horizontal Scroll Widget</h1>
+      <p>
+        In most cases, our job as responsive web developers is to make sure our
+        content doesn't overflow its container (let alone the viewport).
+      </p>
+      <p>
+        But what if we're making an online shop and want to build a widget that
+        suggests similar products? We might decide that we want to let our users
+        scroll through a catalogue, but don't want it to take up as much room as
+        everything in a search results or product category page. This is where
+        horizontal scroll widgets come in.
+      </p>
+    </section>
+  </body>
 </html>
