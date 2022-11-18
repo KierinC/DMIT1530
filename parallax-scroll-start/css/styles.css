@@ -1,8 +1,123 @@
 :root {
-    --text: rgb(34, 34, 34);
-    --bg: rgb(235, 235, 235);
+  --white: #feffff;
+  --black: #0e1621;
+  --pink: #d03b61;
 }
 
+.inner-container {
+  margin: auto;
+  max-width: 40rem;
+}
+
+/* Typographic Styles */
+
 body {
-    color: var(--text);
+  background-color: var(--pink);
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.intro p {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Layout Styles */
+
+section,
+.scrim {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+section:not(.angle-bg),
+.scrim {
+  min-height: calc(100vh + 3rem);
+}
+
+.intro {
+  text-align: center;
+}
+
+.code-snippet .inner-container {
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.code-snippet code {
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Angled Background Style */
+
+.angle-bg {
+  position: relative;
+  padding: 4rem 1rem;
+  z-index: 1;
+}
+
+.angle-bg::before,
+.angle-bg::after {
+  background-color: var(--pink);
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.angle-bg::before {
+  top: 0;
+  transform: skewY(2deg);
+  transform-origin: 100% 0;
+}
+
+.angle-bg::after {
+  bottom: 0;
+  transform: skewY(-2deg);
+  transform-origin: 100%;
+}
+
+/* Paralas Effects */
+
+section.intro {
+  background: url("../img/bottom-layer.webp") center / cover no-repeat fixed;
+}
+
+.scrim {
+  background: url("../img/top-layer-blurred.webp") center / cover no-repeat;
+}
+
+.code-snippet {
+  background: url("../img/mobile-bg.webp") center / cover no-repeat fixed;
+  padding: 10rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .code-snippet {
+    background: url("../img/desktop-bg.webp") center / cover no-repeat fixed;
+  }
 }

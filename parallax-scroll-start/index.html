@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change this, dingus!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure CSS Parallax Scroll Effect</title>
 
     <!-- Additional Information -->
-    <meta name="author" content="">
-    <meta name="description" content="This is a simple index template; therefore, the content of this meta tag will need to be updated when this template is used.">
+    <meta name="author" content="Kierin | KierinC on GitHub" />
+    <meta
+      name="description"
+      content="This website demonstrates how to use the background-attachment property to create pure CSS parallax scroll effects"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- <script src="js/main.js" defer></script> -->
+  </head>
+  <body>
+    <section class="intro">
+      <div class="scrim">
+        <div class="inner-container">
+          <h1>parallax scroll effects</h1>
+          <p>Scroll down to see this CSS property in action.</p>
+        </div>
+      </div>
+    </section>
+    <section class="angle-bg">
+      <div class="inner-container">
+        <h2>So what is parallax scrolling, anyway?</h2>
+        <p>
+          Parallax scrolling is a web design trend where the background image
+          moves at a different speed than the foreground content whenever the
+          user scrolls. While a strong effect can be created with JavaScript
+          (i.e. by moving the background image slightly up while the user
+          scrolls down, and vice-versa), a similar look and feel can also be
+          achieved with pure CSS.
+        </p>
+      </div>
+    </section>
+    <section class="code-snippet">
+      <div class="inner-container">
+        <h2>How do we do it?</h2>
+        <p>
+          To set things up, we need to start with a container that has some
+          content inside of it (so that the user has something to scroll
+          through). Next, we'll use the following CSS properties:
+        </p>
+        <pre>
+          <code>
+background-image: url('../img/parallax.webp');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+          </code>
+        </pre>
 
-</head>
-<body>
-    
-</body>
+        <p>
+          Now that we've set up our background image, as per usual, the
+          following property will create the parallax effect:
+        </p>
+
+        <pre>
+          <code>
+background-attachment: fixed;
+          </code>
+        </pre>
+
+        <p>
+          And that's it. All it takes is the
+          <kbd>background-attachment</kbd> property.
+        </p>
+        <p>
+          Of course, all of these declarations can go into the background
+          shorthand property to make our CSS a little neater and easier to
+          manage:
+        </p>
+
+        <pre>
+          <code>
+background: url('../img/parallax.webp') center / cover no-repeat fixed;
+          </code>
+        </pre>
+      </div>
+    </section>
+  </body>
 </html>
