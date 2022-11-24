@@ -101,7 +101,7 @@ section:last-of-type p:last-of-type {
   background-color: #444;
 }
 
-/* Firfox only */
+/* Firefox only */
 .scroll-wrapper {
   scrollbar-color: #444 #eee;
   scrollbar-width: thin;
