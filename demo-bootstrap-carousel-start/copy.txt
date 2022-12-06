@@ -1,0 +1,54 @@
+Save the Animals
+
+<!-- Navigation -->
+
+Sign The Petition
+
+Attend a Rally
+
+Donate
+
+<!-- Carousel -->
+
+<!-- Slide 1 -->
+
+<h2>Stop Stock Photographers</h2>
+
+<p class="lead">Every year, dozens of animals are humiliated for the sake of stock photos.</p> 
+
+
+<!-- Slide 2 -->
+<h2>Pets deserve dignity.</h2>
+
+<p class="lead">Animals are our companions, not playthings to dress up for our amusement.</p>
+
+
+<!-- Slide 3 -->
+<h2>Do your part.</h2>
+
+<p class="lead">Limit your consumption of unethical stock photographs by refusing to purchase licenses for images of cats in tiny party hats or dogs in adorable sunglasses.</p>
+
+
+<!-- Main Content -->
+<h1>Sign the Petition</h1>
+
+<p>Let the government know that we will not stand for Big Stock Photography's shady lobbying practices and backroom deals. As a civilized nation, we must stop the needless onslaught of hamsters with tiny cupcakes and birds with cute little bow ties. We demand change, and we demand it <em>now</em>.</p>
+
+
+<!-- Form -->
+Your Name
+
+Email Address
+
+<!-- Disclaimer -->
+We'll never share your email with anyone else. Except maybe Frank's Used Car Lot, Farmers Only, or the Church of Scientology.
+
+<!-- Checkbox -->
+Sign me up for the thrice-daily newsletter and wholly unnecessary campaign updates.
+
+
+<!-- Footer -->
+
+<h5>&copy; Stop Stock Photographers 2021</h5>
+
+<p>SSP is a registered non-profit organisation. … what, did you think this was a parody? Is everything a joke to you?</p>
